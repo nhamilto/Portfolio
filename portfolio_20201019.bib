@@ -1,0 +1,398 @@
+
+@article{ali_anisotropy_2018,
+	title = {Anisotropy stress invariants of thermally stratified wind turbine array boundary layers using large eddy simulations},
+	volume = {10},
+	issn = {19417012},
+	doi = {10.1063/1.5016977},
+	abstract = {©2018 Author(s). In the interest of understanding the dynamics and energy transfer between the atmospheric boundary layer and large wind turbine arrays, a description of the turbulence anisotropy in the wake region of wind turbines is necessary. Flux of high momentum flow into the wind turbine array by anisotropic turbulence is a dominant factor of mean kinetic energy resupply for the wind farm. Under thermal stratification, the behavior of the turbulence field, and the energy flux, is significantly altered. Here, a thermally stratified wind turbine array boundary layer is studied in detail using a combination of Lumley and barycentric maps together with the recently introduced spheroid and color maps. The atmospheric flow is modelled using a large eddy simulation driven by a constant geostrophic wind and a time-varying ground surface temperature, obtained from a selected period of the Cooperative Atmosphere-Surface Exchange Study-99 field experiment. The wind farm is modelled using the traditional actuator-disk with rotation and yaw-alignment. The results show that turbulence under unstable stratification tends to be more isotropic than that under neutral and stable stratification. The turbulent mixing attributed to positive buoyancy in unstable regimes determines the energy distribution between flow layers, directly affecting the vertical distribution of anisotropy. Contrarily, in the stably stratified flow, negative buoyancy damps the turbulent fluctuations, hence affecting the evolution of the Reynolds stress, leading to an increase of flow anisotropy. In both thermal stratification regimes, wind turbines alter the structure of the turbulence within the atmospheric boundary layer by creating regions of greater anisotropy and expanding the boundary layer vertically. For the modeling community, it is important to note that the wind turbine wakes display a larger degree of anisotropy that is related well to the production of turbulent kinetic energy and mean kinetic energy entrainment, and hence, it is important to model correctly for accurate power forecasting. Leveraging the new insights into wind turbine/atmospheric boundary layer interaction found here will benefit the formulation of a new generation of efficient low order models for commercial application.},
+	number = {1},
+	journal = {J. Renew. Sustain. Energy},
+	author = {Ali, Naseem and Hamilton, Nicholas and Cortina, Gerard and Calaf, Marc and Cal, Raúl Bayoán},
+	year = {2018},
+	file = {Attachment:/Users/nhamilto/Zotero/storage/BE22YG5N/Ali2018a.pdf:application/pdf}
+}
+
+@article{hamilton_generalized_2018,
+	title = {A generalized framework for reduced-order modeling of a wind turbine wake},
+	volume = {21},
+	issn = {10991824},
+	doi = {10.1002/we.2167},
+	abstract = {Copyright ©2018 John Wiley \& Sons, Ltd. A reduced-order model for a wind turbine wake is sought from large eddy simulation data. Fluctuating velocity fields are combined in the correlation tensor to form the kernel of the proper orthogonal decomposition (POD). Proper orthogonal decomposition modes resulting from the decomposition represent the spatially coherent turbulence structures in the wind turbine wake; eigenvalues delineate the relative amount of turbulent kinetic energy associated with each mode. Back-projecting the POD modes onto the velocity snapshots produces dynamic coefficients that express the amplitude of each mode in time. A reduced-order model of the wind turbine wake (wakeROM) is defined through a series of polynomial parameters that quantify mode interaction and the evolution of each POD mode coefficients. The resulting system of ordinary differential equations models the wind turbine wake composed only of the large-scale turbulent dynamics identified by the POD. Tikhonov regularization is used to recalibrate the dynamical system by adding additional constraints to the minimization seeking polynomial parameters, reducing error in the modeled mode coefficients. The wakeROM is periodically reinitialized with new initial conditions found by relating the incoming turbulent velocity to the POD mode coefficients through a series of open-loop transfer functions. The wakeROM reproduces mode coefficients to within 25.2\%, quantified through the normalized root-mean-square error. A high-level view of the modeling approach is provided as a platform to discuss promising research directions, alternate processes that could benefit stability and efficiency, and desired extensions of the wakeROM.},
+	number = {6},
+	journal = {Wind Energy},
+	author = {Hamilton, Nicholas and Viggiano, Bianca and Calaf, Marc and Tutkun, Murat and Cal, Raúl Bayoán},
+	year = {2018},
+	keywords = {wind turbine wake, proper orthogonal decomposition, dynamical system, reduced-order model},
+	pages = {373--390},
+	file = {Attachment:/Users/nhamilto/Zotero/storage/GHQKBT54/Hamilton2018a.pdf:application/pdf}
+}
+
+@article{hamilton_low-order_2017,
+	title = {Low-order dynamical system model of a fully developed turbulent channel flow},
+	volume = {29},
+	issn = {10897666},
+	doi = {10.1063/1.4985203},
+	abstract = {©2017 Author(s). A reduced order model of a turbulent channel flow is composed from a direct numerical simulation database hosted at the Johns Hopkins University. Snapshot proper orthogonal decomposition (POD) is used to identify the Hilbert space from which the reduced order model is obtained, as the POD basis is defined to capture the optimal energy content by mode. The reduced order model is defined by coupling the evolution of the dynamic POD mode coefficients through their respective time derivative with a least-squares polynomial fit of terms up to third order. Parameters coupling the dynamics of the POD basis are defined in analog to those produced in the classical Galerkin projection. The resulting low-order dynamical system is tested for a range of basis modes demonstrating that the non-linear mode interactions do not lead to a monotonic decrease in error propagation. A basis of five POD modes accounts for 50\% of the integrated turbulence kinetic energy but captures only the largest features of the turbulence in the channel flow and is not able to reflect the anticipated flow dynamics. Using five modes, the low-order model is unable to accurately reproduce Reynolds stresses, and the root-mean-square error of the predicted stresses is as great as 30\%. Increasing the basis to 28 modes accounts for 90\% of the kinetic energy and adds intermediate scales to the dynamical system. The difference between the time derivatives of the random coefficients associated with individual modes and their least-squares fit is amplified in the numerical integration leading to unstable long-time solutions. Periodic recalibration of the dynamical system is undertaken by limiting the integration time to the range of the sampled data and offering the dynamical system new initial conditions. Renewed initial conditions are found by pushing the mode coefficients in the end of the integration time toward a known point along the original trajectories identified through a least-squares projection. Under the recalibration scheme, the integration time of the dynamical system can be extended to arbitrarily large values provided that modified initial conditions are offered to the system. The low-order dynamical system composed with 28 modes employing periodic recalibration reconstructs the spatially averaged Reynolds stresses with similar accuracy as the POD-based turbulence description. Data-driven reduced order models like the one undertaken here are widely implemented for control applications, derive all necessary parameters directly from the input, and compute predictions of system dynamics efficiently. The speed, flexibility, and portability of the reduced order model come at the cost of strict data requirements; the model identification requires simultaneous realizations of mode coefficients and their time derivatives, which may be difficult to achieve in some investigations.},
+	number = {6},
+	journal = {Phys. Fluids},
+	author = {Hamilton, Nicholas and Tutkun, Murat and Cal, Raúl Bayoán},
+	year = {2017},
+	file = {Attachment:/Users/nhamilto/Zotero/storage/WM35ATT2/Hamilton2017b.pdf:application/pdf}
+}
+
+@article{hamilton_anisotropic_2017,
+	title = {Anisotropic character of low-order turbulent flow descriptions through the proper orthogonal decomposition},
+	volume = {2},
+	issn = {2469990X},
+	doi = {10.1103/PhysRevFluids.2.014601},
+	abstract = {©2017 American Physical Society. Proper orthogonal decomposition (POD) is applied to distinct data sets in order to characterize the propagation of error arising from basis truncation in the description of turbulence. Experimental data from stereo particle image velocimetry measurements in a wind turbine array and direct numerical simulation data from a fully developed channel flow are used to illustrate dependence of the anisotropy tensor invariants as a function of POD modes used in low-order descriptions. In all cases, ensembles of snapshots illuminate a variety of anisotropic states of turbulence. In the near wake of a model wind turbine, the turbulence field reflects the periodic interaction between the incoming flow and rotor blade. The far wake of the wind turbine is more homogenous, confirmed by the increased magnitude of the anisotropy factor. By contrast, the channel flow exhibits many anisotropic states of turbulence. In the inner layer of the wall-bounded region, one observes one-component turbulence at the wall; immediately above, the turbulence is dominated by two components, with the outer layer showing fully three-dimensional turbulence, conforming to theory for wall-bounded turbulence. The complexity of flow descriptions resulting from truncated POD bases can be greatly mitigated by severe basis truncations. However, the current work demonstrates that such simplification necessarily exaggerates the anisotropy of the modeled flow and, in extreme cases, can lead to the loss of three-dimensionality. Application of simple corrections to the low-order descriptions of the Reynolds stress tensor significantly reduces the residual root-mean-square error. Similar error reduction is seen in the anisotropy tensor invariants. Corrections of this form reintroduce three-dimensionality to severe truncations of POD bases. A threshold for truncating the POD basis based on the equivalent anisotropy factor for each measurement set required many more modes than a threshold based on energy. The mode requirement to reach the anisotropy threshold after correction is reduced by a full order of magnitude for all example data sets, ensuring that economical low-dimensional models account for the isotropic quality of the turbulence field.},
+	number = {1},
+	journal = {Phys. Rev. Fluids},
+	author = {Hamilton, Nicholas and Tutkun, Murat and Cal, Raúl Bayoán},
+	year = {2017},
+	pages = {1--33},
+	file = {Attachment:/Users/nhamilto/Zotero/storage/YKMFRI4P/Hamilton2017a.pdf:application/pdf}
+}
+
+@article{hamilton_low-order_2016,
+	title = {Low-order representations of the canonical wind turbine array boundary layer via double proper orthogonal decomposition},
+	volume = {28},
+	issn = {10897666},
+	url = {http://dx.doi.org/10.1063/1.4940659},
+	doi = {10.1063/1.4940659},
+	abstract = {©2016 AIP Publishing LLC. Wind turbine wakes are investigated in order to characterize the development of energetic turbulence structures. Experimental data from stereo particle image velocimetry render the full Reynolds stress tensor accessible in planes parallel to the swept area of the scale model turbine rotor. Proper orthogonal decomposition (POD) is applied to decompose and analyze structures in the wake. The modes resulting from the decomposition demonstrate that structures grow and develop along the streamwise direction. A second iteration of the snapshot POD, otherwise called double proper orthogonal decomposition (DPOD), is applied to modes of common rank from the span of measurement locations yielding an ordered set of projections. The DPOD describes the sub-modal organization in terms of largest common projection and a series of correction modes with coefficients that are functions of the streamwise coordinate. Sub-structures ofPODmodes that persist through thewake have a dominant projection that accounts for the character of individual POD modes. Distribution of eigenvalues associated with DPOD modes indicates that near-wake turbulence behavior is superimposed on overall wake structure. High order POD modes do not reveal any common projections in the measurement sets of the wake and associated eigenvalues are nearly equal. The eigenvalues from the DPOD indicate that the structure of the wind turbine wake can be described with a small subset of the original mode basis. The truncated basis of sub-modal structures represents a total reduction to 0.015\% of the degrees of freedom of the wind turbine wake. Low-order representations of the Reynolds stress tensor are made for the wake using the most dominant DPOD modes. The stress tensor is corrected to account for energy excluded from the truncated basis. A tensor of constant coefficients is defined to rescale the low-order representation of the stresses to match the original statistics. That a constant correction for each term in the Reynolds stress tensor is sufficient to correct the wake suggests that high order modes account for a nearly constant, isotropic turbulence kinetic energy. The following method reconstructs diagonal elements of the stress tensor to a root-meansquare error within 15\% and shear terms to within 3\%.},
+	number = {2},
+	journal = {Phys. Fluids},
+	author = {Hamilton, Nicholas and Tutkun, Murat and Cal, Raúl Bayoán},
+	year = {2016},
+	pages = {25103},
+	file = {Attachment:/Users/nhamilto/Zotero/storage/CKKMDSLV/Hamilton2016.pdf:application/pdf}
+}
+
+@article{hamilton_statistical_2012,
+	title = {Statistical analysis of kinetic energy entrainment in a model wind turbine array boundary layer},
+	volume = {4},
+	issn = {19417012},
+	doi = {10.1063/1.4761921},
+	abstract = {For large wind farms, kinetic energy must be entrained from the flow above the wind turbines to replenish wakes and enable power extraction in the array. Various statistical features of turbulence causing vertical entrainment of mean-flow kinetic energy are studied using hot-wire velocimetry data taken in a model wind farm in a scaled wind tunnel experiment. Conditional statistics and spectral decompositions are employed to characterize the most relevant turbulent flow structures and determine their length-scales. Sweep and ejection events are shown to be the largest contributors to the vertical kinetic energy flux, although their relative contribution depends upon the location in the wake. Sweeps are shown to be dominant in the region above the wind turbine array. A spectral analysis of the data shows that large scales of the flow, about the size of the rotor diameter in length or larger, dominate the vertical entrainment. The flow is less incoherent below the array, causing decreased vertical fluxes the...},
+	number = {6},
+	journal = {J. Renew. Sustain. Energy},
+	author = {Hamilton, Nicholas and Kang, Hyung Suk and Meneveau, Charles and Cal, Raúl Bayoán},
+	year = {2012},
+	file = {Attachment:/Users/nhamilto/Zotero/storage/9E4JLIJP/Hamilton2012.pdf:application/pdf}
+}
+
+@article{ali_turbulence_2017,
+	title = {Turbulence characteristics of a thermally stratified wind turbine array boundary layer via proper orthogonal decomposition},
+	volume = {828},
+	issn = {0022-1120},
+	doi = {10.1017/jfm.2017.492},
+	abstract = {A large eddy simulation framework is used to explore the structure of the turbulent flow in a thermally stratified wind turbine array boundary layer. The flow field is driven by a constant geostrophic wind with time-varying surface boundary conditions obtained from a selected period of the CASES-99 field experiment. Proper orthogonal decomposition is used to extract coherent structures of the turbulent flow under the considered thermal stratification regimes. The flow structure is discussed in the context of three-dimensional representations of key modes, which demonstrate features ranging in size from the wind turbine wakes to the atmospheric boundary layer. Results demonstrate that structures related to the atmospheric boundary layer flow dominate over those introduced by the wind farm for the unstable and neutrally stratified regimes; large structures in atmospheric turbulence are beneficial for the wake recovery, and consequently the presence of the turbulent wind turbine wakes is diminished. Contrarily, the flow in the stably stratified case is fully dominated by the presence of the turbines and highly influenced by the Coriolis force. A comparative analysis of the test cases indicates that during the stable regime, higher-order modes contribute less to the overall character of the flow. Under neutral and unstable stratification, important turbulence dynamics are distributed over a larger range of basis functions. The influence of the wind turbines on the structure of the atmospheric boundary layer is mainly quantified via the turbulence kinetic energy of the first ten modes. Linking the new insights into structure of the wind turbine/atmospheric boundary layer and their interaction addressed here will benefit the formulation of new simplified models for commercial application.},
+	journal = {J. Fluid Mech.},
+	author = {Ali, N and Cortina, G and Hamilton, N and Calaf, M and Cal, R B},
+	year = {2017},
+	keywords = {atmospheric flows, boundary layer structure, stratified flows},
+	pages = {175--195},
+	file = {Attachment:/Users/nhamilto/Zotero/storage/SZ9W3GUP/Ali2017.pdf:application/pdf}
+}
+
+@article{ali_classification_2019,
+	title = {Classification of the {Reynolds} stress anisotropy tensor in very large thermally stratified wind farms using colormap image segmentation},
+	volume = {11},
+	issn = {19417012},
+	doi = {10.1063/1.5113654},
+	abstract = {A combinatorial technique merging image segmentation via K-means clustering and colormap of the barycentric triangle is used to investigate the Reynolds stress anisotropy tensor. The clustering aids in extracting the identical features from the spatial distribution of the anisotropy colormap images by minimizing the sum of squared error between the cluster center and all data points. The dataset used to investigate the applicability of the clustering technique consists of the flow in a large wind farm for different thermal stratification representatives of a characteristic diurnal cycle. Based on the attribute values defining the colormap of the Reynolds anisotropy stress tensor, the images are converted into color space and then the K-means algorithm assesses the similarities and dissimilarities via a distance metric. In unsupervised learning problems, the K-means algorithm runs independently for different numbers of clusters. The elbow criterion is used to determine the best trade-off between the cluster number and the total variance to select the optimal number of clusters. The clustering technique improves pattern visualization and allows us to identify characteristic regions of the flow based on the structure of the Reynolds stress anisotropy. The dominant patterns reveal that there are major perturbations that control the operation of the wind farm during the diurnal cycle, including the formation and growth of the convective boundary layer and the strong stratification among the flow layers during the stably-stratified period. These parameters attempt to redistribute energy into the velocity deficit region and contribute to the energy balance in the flow domain through the distributions of the momentum flux. As a result of the weak mixing and negligible buoyancy effect, the neutral wind farm displays gradual changes from a prolate turbulence state near the rotor to an oblate turbulence state at the top of the domain.},
+	number = {6},
+	journal = {Journal of Renewable and Sustainable Energy},
+	author = {Ali, Naseem and Hamilton, Nicholas and Calaf, Marc and Cal, Raúl Bayoán},
+	year = {2019},
+	note = {Publisher: AIP Publishing LLC},
+	file = {Attachment:/Users/nhamilto/Zotero/storage/4SBG2DL8/Alietal2019.pdf:application/pdf}
+}
+
+@article{ali_turbulence_2019,
+	title = {Turbulence kinetic energy budget and conditional sampling of momentum, scalar, and intermittency fluxes in thermally stratified wind farms},
+	volume = {20},
+	copyright = {All rights reserved},
+	issn = {14685248},
+	doi = {10.1080/14685248.2018.1564831},
+	abstract = {A description of the turbulence kinetic energy budget is investigated to understand the dynamics and turbulence energy transfer between the atmospheric boundary layer and large wind farms. The turbulence kinetic energy budget terms are a dominant factor in explaining the energy supply process in wind farms. Large eddy simulations are used to generate the thermally stratified wind turbine array boundary layer, where stable and unstable conditions are considered. The wakes represent a sink of mean kinetic energy, and turbulence transport redistributes energy in the wake region. The energy balance between the budget terms is dependent on the physical location in the wind farm. During the unstable scenario, turbulence is driven by the production, transport, and buoyancy terms. Further, the contribution of the turbulence kinetic energy budget terms is reduced with increasing atmospheric stability, especially above the shear layer, where the mechanical production is the dominant term. Pressure diffusion redistributes the turbulent energy from the streamwise direction into the other components of the normal Reynolds stresses. This distinctive feature of the changing thermal stratification is presented through the quadrant analysis. The momentum ejection and sweep frequencies are both comparable and dominant. The scalar flux shows an increase in the contribution of the negative correlation in the quadrants. The quadrant analysis is extended to account for intermittency based on the pointwise Hölder exponents. Positive correlations are dominant in the wake and in higher layers of the domain for both considered cases.},
+	number = {1},
+	journal = {Journal of Turbulence},
+	author = {Ali, Naseem and Hamilton, Nicholas and Calaf, Marc and Cal, Raúl Bayoán},
+	year = {2019},
+	keywords = {wind energy, Atmospheric turbulence, large Eddy simulation, passive scalar turbulence},
+	pages = {32--63},
+	file = {Attachment:/Users/nhamilto/Zotero/storage/N8ZFZNKK/Alietal_TKE.pdf:application/pdf}
+}
+
+@article{hamilton_anisotropy_2015,
+	title = {Anisotropy of the {Reynolds} stress tensor in the wakes of wind turbine arrays in {Cartesian} arrangements with counter-rotating rotors},
+	volume = {27},
+	issn = {10897666},
+	doi = {10.1063/1.4903968},
+	abstract = {A 4 × 3 wind turbine array in a Cartesian arrangement was constructed in a wind tunnel setting with four configurations based on the rotational sense of the rotor blades. The fourth row of devices is considered to be in the fully developed turbine canopy for a Cartesian arrangement. Measurements of the flow field were made with stereo particle-image velocimetry immediately upstream and downstream of the selected model turbines. Rotational sense of the turbine blades is evident in the mean spanwise velocity W and the Reynolds shear stress −vw. The flux of kinetic energy is shown to be of greater magnitude following turbines in arrays where direction of rotation of the blades varies. Invariants of the normalized Reynolds stress anisotropy tensor (η and ξ) are plotted in the Lumley triangle and indicate that distinct characters of turbulence exist in regions of the wake following the nacelle and the rotor blade tips. Eigendecomposition of the tensor yields principle components and corresponding coordinate system transformations. Characteristic spheroids representing the balance of components in the normalized anisotropy tensor are composed with the eigenvalues yielding shapes predicted by the Lumley triangle. Rotation of the coordinate system defined by the eigenvectors demonstrates trends in the streamwise coordinate following the rotors, especially trailing the top-tip of the rotor and below the hub. Direction of rotation of rotor blades is shown by the orientation of characteristic spheroids according to principle axes. In the inflows of exit row turbines, the normalized Reynolds stress anisotropy tensor shows cumulative effects of the upstream turbines, tending toward prolate shapes for uniform rotational sense, oblate spheroids for streamwise organization of rotational senses, and a mixture of characteristic shapes when the rotation varies by row. Comparison between the invariants of the Reynolds stress anisotropy tensor and terms from the mean mechanical energy equation indicate correlation between the degree of anisotropy and the regions of the wind turbine wakes where turbulence kinetic energy is produced. The flux of kinetic energy into the momentum-deficit area of the wake from above the canopy is associated with prolate characteristic spheroids. Flux upward into the wake from below the rotor area is associated with oblate characteristic spheroids. Turbulence in the region of the flow directly following the nacelle of the wind turbines demonstrates greater isotropy than regions following the rotor blades. The power and power coefficients for wind turbines indicate that flow structures on the order of magnitude of the spanwise turbine spacing that increase turbine efficiency depending on particular array configuration.},
+	number = {1},
+	journal = {Phys. Fluids},
+	author = {Hamilton, Nicholas and Cal, Raúl Bayoán},
+	year = {2015},
+	file = {Attachment:/Users/nhamilto/Zotero/storage/5JLMWVI4/Hamilton2015.pdf:application/pdf}
+}
+
+@inproceedings{vested_wake_2014,
+	title = {Wake interaction and power production of variable height model wind farms},
+	volume = {524},
+	booktitle = {Journal of {Physics}: {Conference} {Series}},
+	publisher = {IOP Publishing},
+	author = {Vested, Malene Hovgaard and Hamilton, N and Sørensen, Jens Nørkær and Cal, RB},
+	year = {2014},
+	note = {Issue: 1},
+	pages = {012169}
+}
+
+@inproceedings{cal_experimental_2013,
+	title = {Experimental study of turbine hub height variation on wind farms},
+	booktitle = {51st {AIAA} {Aerospace} {Sciences} {Meeting} including the {New} {Horizons} {Forum} and {Aerospace} {Exposition}},
+	author = {Cal, Raul and Melius, Matthew and Hamilton, Nicholas and Houck, Daniel},
+	year = {2013},
+	pages = {609}
+}
+
+@inproceedings{hamilton_statistical_2014,
+	title = {Statistical development of wind turbine wakes for the fully developed wind turbine array boundary layer characterized via wall-normal-spanwise planes},
+	booktitle = {19th {Australasian} {Fluid} {Mechanics} {Conference}},
+	author = {Hamilton, NM and Cal, RB},
+	year = {2014}
+}
+
+@article{hamilton_characterization_2014,
+	title = {Characterization of {Turbulence} and {Deterministic} {Stresses} through {Phase}-{Dependent} {Measurements} in the {Near} {Wake} of a {Wind} {Turbine} in an {Infinite} {Turbine} {Array}},
+	author = {Hamilton, NM and Tutkun, M and Cal, RB},
+	year = {2014}
+}
+
+@article{hamilton_wind_2015,
+	title = {Wind turbine boundary layer arrays for {Cartesian} and staggered configurations-{Part} {I}, flow field and power measurements},
+	volume = {18},
+	copyright = {All rights reserved},
+	number = {2},
+	journal = {Wind Energy},
+	author = {Hamilton, Nicholas and Melius, Matthew and Cal, Raúl Bayoán},
+	year = {2015},
+	pages = {277--295}
+}
+
+@inproceedings{hamilton_characteristic_2014,
+	title = {Characteristic shapes of the normalized {Reynolds} stress anisotropy tensor in the wakes of wind turbines with counter-rotating rotors},
+	booktitle = {17th international symposium on applications of laser techniques to fluid mechanics},
+	author = {Hamilton, NM and Cal, RB},
+	year = {2014},
+	pages = {1--18}
+}
+
+@incollection{hamilton_turbulent_2017,
+	title = {Turbulent and {Deterministic} {Stresses} in the {Near} {Wake} of a {Wind} {Turbine} {Array}},
+	booktitle = {Whither {Turbulence} and {Big} {Data} in the 21st {Century}?},
+	publisher = {Springer},
+	author = {Hamilton, Nicholas Michael and Tutkun, Murat and Cal, Raúl Bayoán},
+	year = {2017},
+	pages = {255--271}
+}
+
+@article{hamilton_wind_2015-1,
+	title = {Wind turbine boundary layer arrays for {Cartesian} and staggered configurations: {Part} {II}, low-dimensional representations via the proper orthogonal decomposition},
+	volume = {18},
+	number = {2},
+	journal = {Wind Energy},
+	author = {Hamilton, Nicholas and Tutkun, Murat and Cal, Raúl Bayoán},
+	year = {2015},
+	pages = {297--315}
+}
+
+@article{ali_assessing_2018,
+	title = {Assessing spacing impact on coherent features in a wind turbine array boundary layer},
+	volume = {3},
+	number = {NREL/JA-5000-72521},
+	journal = {Wind Energy Science (Online)},
+	author = {Ali, Naseem and Hamilton, Nicholas and DeLucia, Dominic and Bayoán Cal, Raúl},
+	year = {2018},
+	note = {Publisher: National Renewable Energy Lab.(NREL), Golden, CO (United States)}
+}
+
+@inproceedings{jonkman_validation_2018,
+	title = {Validation of {FAST}. {Farm} {Against} {Large}-{Eddy} {Simulations}},
+	volume = {1037},
+	booktitle = {Journal of {Physics}: {Conference} {Series}},
+	publisher = {IOP Publishing},
+	author = {Jonkman, Jason and Doubrawa, P and Hamilton, Nicholas and Annoni, Jennifer and Fleming, P},
+	year = {2018},
+	note = {Issue: 6},
+	pages = {062005}
+}
+
+@article{debnath_development_2018,
+	title = {Development of coherent structures in complex terrain},
+	volume = {63},
+	journal = {Bulletin of the American Physical Society},
+	author = {Debnath, Mithu and Hamilton, Nicholas and Moriarty, Patrick},
+	year = {2018},
+	note = {Publisher: American Physical Society}
+}
+
+@inproceedings{quon_validation_2019,
+	title = {Validation of {Wind} {Power} {Plant} {Modeling} {Approaches} in {Complex} {Terrain}},
+	booktitle = {{AIAA} {Scitech} 2019 {Forum}},
+	author = {Quon, Eliot W and Doubrawa, Paula and Annoni, Jennifer and Hamilton, Nicholas and Churchfield, Matthew J},
+	year = {2019},
+	pages = {2085}
+}
+
+@article{vested_more_2014,
+	title = {More efficient wind farms by the use of different height wind turbines},
+	author = {Vested, M and Hamilton, N and Sørensen, JN and Cal, RB},
+	year = {2014}
+}
+
+@techreport{shaler_fast_2019,
+	title = {{FAST}. {Farm} {Response} to {Varying} {Wind} {Inflow} {Techniques}},
+	institution = {National Renewable Energy Lab.(NREL), Golden, CO (United States)},
+	author = {Shaler, Kelsey and Jonkman, Jason and Doubrawa Moreira, Paula and Hamilton, Nicholas},
+	year = {2019}
+}
+
+@inproceedings{shaler_effects_2019,
+	title = {Effects of {Inflow} {Spatiotemporal} {Discretization} on {Wake} {Meandering} and {Turbine} {Structural} {Response} using {FAST}. {Farm}},
+	volume = {1256},
+	booktitle = {Journal of {Physics}: {Conference} {Series}},
+	publisher = {IOP Publishing},
+	author = {Shaler, Kelsey and Jonkman, Jason and Hamilton, Nicholas},
+	year = {2019},
+	note = {Issue: 1},
+	pages = {012023}
+}
+
+@inproceedings{hamilton_highlighting_2020,
+	title = {Highlighting the impact of yaw control by parsing atmospheric conditions based on total variation},
+	volume = {1452},
+	doi = {10.1088/1742-6596/1452/1/012006},
+	booktitle = {Journal of {Physics}: {Conference} {Series}},
+	author = {Hamilton, N.},
+	year = {2020},
+	pages = {012006}
+}
+
+@article{farrell_design_2020,
+	title = {Design and analysis of a spatially heterogeneous wake},
+	issn = {2366-7443},
+	url = {https://wes.copernicus.org/preprints/wes-2020-57/},
+	doi = {https://doi.org/10.5194/wes-2020-57},
+	abstract = {{\textless}p{\textgreater}{\textless}strong{\textgreater}Abstract.{\textless}/strong{\textgreater} Methods of turbine wake modeling are being developed to more accurately account for spatially variant atmospheric conditions within wind farms. Most current wake modeling utilities are designed to apply a uniform flow field to the entire domain of a wind farm. When this method is used, the accuracy of power prediction and wind farm controls can be compromised depending on the flow-field characteristics of a particular area. In an effort to improve strategies of wind farm wake modeling and power prediction, FLOw Redirection and Induction in Steady State (FLORIS) was developed to implement sophisticated methods of atmospheric characterization and power output calculation. In this paper, we describe an adapted FLORIS model that features spatial heterogeneity in flow-field characterization. This model approximates an observed flow field by interpolating from a set of atmospheric measurements that represent local weather conditions. The adaptations were validated by comparing the simulated power predictions generated from FLORIS to the actual recorded wind farm output from the Supervisory Control And Data Acquisition (SCADA) recordings. This work quantifies the accuracy of wind plant power predictions under heterogeneous flow conditions and establishes best practices for atmospheric surveying for wake modeling.{\textless}/p{\textgreater}},
+	language = {English},
+	urldate = {2020-06-29},
+	journal = {Wind Energy Science Discussions},
+	author = {Farrell, Alayna and King, Jennifer and Draxl, Caroline and Mudafort, Rafael and Hamilton, Nicholas and Bay, Christopher J. and Fleming, Paul and Simley, Eric},
+	month = mar,
+	year = {2020},
+	note = {Publisher: Copernicus GmbH},
+	pages = {1--25},
+	file = {Full Text PDF:/Users/nhamilto/Zotero/storage/3D5R92I5/Farrell et al. - 2020 - Design and analysis of a spatially heterogeneous w.pdf:application/pdf;Snapshot:/Users/nhamilto/Zotero/storage/I3LVXPFS/wes-2020-57.html:text/html}
+}
+
+@article{debnath_longitudinal_2020,
+	title = {Longitudinal coherence and short-term wind speed prediction based on a nacelle-mounted {Doppler} lidar},
+	volume = {1618},
+	url = {https://doi.org/10.1088%2F1742-6596%2F1618%2F3%2F032051},
+	doi = {10.1088/1742-6596/1618/3/032051},
+	abstract = {The spatial structure of turbulence in atmospheric boundary layer flows is highly relevant to wind energy. In particular, wind turbine control strategies based on inflow preview measurements require knowledge of the longitudinal evolution of turbulent flow as it approaches the rotor. These upstream measurements are usually obtained with nacelle-mounted wind lidars. In contrast to traditional in situ anemometry, lidars collect measurements within a probe volume which varies in size depending on the technology of the commercial system being used. Here, we address two issues related to the use of wind lidar to measure the incoming flow to a wind turbine: (i) whether existing longitudinal coherence models can be used to predict flow at the rotor, based on measurements performed at a distance away from the rotor; and (ii) what effect probe-volume averaging has on the inflow predictions. These two questions are critical to the design and implementation of robust wind turbine control strategies. To address these questions, we perform field measurements and large-eddy simulations to determine which incoming flow structures can be readily predicted with existing coherence models, and which require additional corrections to account for lidar volumetric averaging effects. Results reveal that the wind turbine induction zone has a negligible impact on the longitudinal coherence and first-order turbulence quantities, such as the standard deviation of velocity fluctuations. However, the phase of the signal, from which advection time periods of the turbulent structures are derived, is affected by the rotor blockage effect.},
+	journal = {Journal of Physics: Conference Series},
+	author = {Debnath, M. and Brugger, P. and Simley, E. and Doubrawa, P. and Hamilton, N. and Scholbrock, A. and Jager, D. and Murphy, M. and Roadman, J. and Lundquist, J. K. and Fleming, P. and Porté-Agel, F. and Moriarty, P.},
+	month = sep,
+	year = {2020},
+	note = {Publisher: IOP Publishing},
+	pages = {032051}
+}
+
+@article{fleming_overview_2020,
+	title = {Overview of {FLORIS} updates},
+	volume = {1618},
+	url = {https://doi.org/10.1088%2F1742-6596%2F1618%2F2%2F022028},
+	doi = {10.1088/1742-6596/1618/2/022028},
+	abstract = {In this paper, we review updates made to the FLORIS (FLOw Redirection and Induction in Steady State) open-source framework for wind farm control modeling, design and analysis. The updates are focused on improvements for large arrays of turbines - including heterogenous inflows and incorporating second-order wake steering effects - design, and analysis tools for practical application of wind farm control, and improvements to the software architecture for best practices in modularization and cooperative development.},
+	journal = {Journal of Physics: Conference Series},
+	author = {Fleming, Paul and King, Jennifer and Bay, Christopher J. and Simley, Eric and Mudafort, Rafael and Hamilton, Nicholas and Farrell, Alayna and Martinez-Tossas, Luis},
+	month = sep,
+	year = {2020},
+	note = {Publisher: IOP Publishing},
+	pages = {022028}
+}
+
+@article{hulsman_modelling_2020,
+	title = {Modelling and assessing the near-wake representation and turbulence behaviour of control-oriented wake models},
+	volume = {1618},
+	url = {https://doi.org/10.1088%2F1742-6596%2F1618%2F2%2F022056},
+	doi = {10.1088/1742-6596/1618/2/022056},
+	abstract = {Due to the interaction between the wake of an upstream turbine on a downstream turbine, power losses and increased fatigue loads occur. By yawing the upstream turbine with regard to the wind direction, one can potentially reduce the power losses of the downstream turbine and reduce the fatigue loads. The evolution of the wake depends on the pressure gradient within the near-wake region and the turbulent kinetic energy and must be incorporated in existing wake steering algorithms to provide an accurate estimation of the wake flow. This paper will show a first approach to implement a near-wake model and a turbulence model in the curled wake model within the controls-oriented framework FLORIS. The near-wake model is based on an analytical expression of the velocity profile to model the pressure gradient. Furthermore, two turbulence models are incorporated within the curled wake model based on a Gaussian-distribution and a mixing length formulation. The adapted curled wake model is then assessed with the measurement data acquired in the wind tunnel at ForWind – University of Oldenburg. The evaluation of the models show good agreement for the velocity deficit and representation of the near-wake region. Furthermore, the turbulent kinetic energy behaved as expected in comparison to other work, showing a ring of high turbulent kinetic energy at non-yawed condition which is deflected to a curled shape at large yaw angles with the turbulence model based on a mixing length formulation.},
+	journal = {Journal of Physics: Conference Series},
+	author = {Hulsman, Paul and Martínez-Tossas, Luis A. and Hamilton, Nicholas and Kühn, Martin},
+	month = sep,
+	year = {2020},
+	note = {Publisher: IOP Publishing},
+	pages = {022056}
+}
+
+@article{hamilton_identification_2019,
+	title = {Identification of {Dynamic} {Atmospheric} {Conditions} via {Total} {Variation}},
+	journal = {APS},
+	author = {Hamilton, Nicholas},
+	year = {2019},
+	pages = {P20--008}
+}
+
+@techreport{hamilton_total_2019,
+	title = {Total variation of atmospheric data: covariance minimization about objective functions to detect conditions of interest},
+	institution = {National Renewable Energy Lab.(NREL), Golden, CO (United States)},
+	author = {Hamilton, Nicholas},
+	year = {2019}
+}
+
+@article{hamilton_atmospheric_2020,
+	title = {Atmospheric condition identification in multivariate data through a metric for total variation},
+	volume = {13},
+	number = {2},
+	journal = {Atmospheric Measurement Techniques},
+	author = {Hamilton, Nicholas},
+	year = {2020},
+	note = {Publisher: Copernicus GmbH},
+	pages = {1019--1032}
+}
+
+@article{martinez-tossas_curled_2020,
+	title = {The curled wake model: {A} three-dimensional and extremely fast steady-state wake solver for wind plant flows},
+	journal = {Wind Energy Science Discussions},
+	author = {Martínez-Tossas, Luis A and King, Jennifer and Quon, Eliot and Bay, Christopher J and Mudafort, Rafael and Hamilton, Nicholas and Fleming, Paul},
+	year = {2020},
+	note = {Publisher: Copernicus GmbH},
+	pages = {1--16}
+}
+
+@article{doubrawa_multimodel_2020,
+	title = {Multimodel validation of single wakes in neutral and stratified atmospheric conditions},
+	journal = {Wind Energy},
+	author = {Doubrawa, Paula and Quon, Eliot W and Martinez-Tossas, Luis A and Shaler, Kelsey and Debnath, Mithu and Hamilton, Nicholas and Herges, Thomas G and Maniaci, Dave and Kelley, Christopher L and Hsieh, Alan S and {others}},
+	year = {2020}
+}
+
+@techreport{moriarty_american_2020,
+	title = {American {WAKE} {experimeNt} ({AWAKEN})},
+	institution = {National Renewable Energy Lab.(NREL), Golden, CO (United States)},
+	author = {Moriarty, Patrick and Hamilton, Nicholas and Debnath, Mithu and Fao, Rebecca and Roadman, Jason and van Dam, Jeroen and Herges, Tommy and Isom, Brad and Lundquist, Julie and Maniaci, David and {others}},
+	year = {2020}
+}
+
+@article{sadek_new_2020,
+	title = {A new analytical wavelet-{Gaussian} wake model},
+	journal = {Bulletin of the American Physical Society},
+	author = {Sadek, Zein and Cal, Raul Bayoan and Hamilton, Nicholas},
+	year = {2020},
+	note = {Publisher: American Physical Society}
+}
