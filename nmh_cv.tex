@@ -1,0 +1,219 @@
+%\textbf{}%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,ragged2e,a4paper,academicons]{altacv}
+%,a4paper
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+\usepackage{hyperref}
+% Color definitions
+\definecolor{VividPurple}{RGB}{0, 121, 193}
+% \definecolor{VividPurple}{HTML}{115DA8}
+\definecolor{SlateGrey}{HTML}{3b3c36}
+\definecolor{LightGrey}{HTML}{606060}
+% Color assignments
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% \usepackage[backend=biber,
+%                 style=mla,
+%                 showmedium=false,
+%                 sorting=ydnt,
+%                 firstinits=true,
+%                 dashed=false,
+%                 maxnames=3
+%                 ]{biblatex}
+                
+% \newcommand{\makeauthorbold}[1]{%
+%   \DeclareNameFormat{author}{%
+%     \ifthenelse{\value{listcount}=1}
+%     {%
+%       {\expandafter\ifstrequal\expandafter{\namepartfamily}{#1}{\mkbibbold{\namepartfamily\addcomma\addspace \namepartgiveni}}{\namepartfamily\addcomma\addspace \namepartgiveni}}
+%       %
+%     }{\ifnumless{\value{listcount}}{\value{liststop}}
+%         {\expandafter\ifstrequal\expandafter{\namepartfamily}{#1}{\mkbibbold{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}
+%         {\expandafter\ifstrequal\expandafter{\namepartfamily}{#1}{\mkbibbold{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}%
+%       }
+%     \ifthenelse{\value{listcount}<\value{liststop}}
+%     {\addcomma\space}
+%   }
+% }
+% \makeauthorbold{Hamilton}
+
+%% sample.bib contains your publications
+\addbibresource{portfolio_20221127.bib}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+
+\begin{document}
+\name{Nicholas Hamilton, Ph.D.}
+\tagline{Senior Research Engineer}
+
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+
+% \photo{2.5cm}{isso}
+\personalinfo{}%
+%   % Not all of these are required!
+%   % You can add your own with \printinfo{symbol}{detail}
+%   \email{  nicholas@researchcascade.com} \hspace{0.5cm} \phone{ 720.551.1897} \hspace{0.5cm} \location{ Golden, CO}
+  
+%   \linkedin{  linkedin.com/in/nicholas-hamilton-55015753/}
+% %    \twitter{@i4ismaill}
+% \hspace{0.5cm}
+% %    web: www.researchcascade.com
+%   \github{ https://github.com/nhamilto} % I'm just making this up though.
+% %   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+% }
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\vspace{-1em}
+\textbf{Renewable Energy, Fluid Mechanics, Remote Sensing, Dynamical Systems}
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[sidebar-skills]{Experience}
+
+% \cvevent{Principal Scientist}{Cascade Research}{Nov 2019 -- Present}{Golden, CO}
+% Founding member of Cascade Research, a boutique consultancy focused on scientific research and consulting for technology, fluid systems, and renewable energy.
+% \begin{itemize}
+% \item Lead research and technology strategy for Cascade research, including theoretical development, feasibility studies, and prototyping.
+% \item Develop proposals for venture capital and government funding opportunities to support innovative technology concepts and scientific breakthroughs.
+% \end{itemize}
+
+% \divider
+
+\cvevent{Senior Research Engineer \& Principal Investigator}{National Renewable Energy Laboratory}{2017 -- Present}{Golden, CO}
+Lead R\&D efforts within the DOE Atmosphere to Electrons initiative to advance the next generation of wind energy technology.
+\begin{itemize}
+\item Principle investigator leading more than \$9M of DOE projects including instrumentation development, collaborative experimental projects, and high-fidelity modeling of turbulent atmospheric velocity and temperature fields
+\item Lead center-wide efforts in analytical and data-driven wind turbine wake model development, remote sensing technology and methods, and the use of field measurements for model validation
+% \item Coordinate 
+\item Developed \$30M$+$ worth of proposals for the national lab system, US DOE, NSF, and industry partners, that support new full-time research and administration positions
+\item Mentor more than 20 graduate and undergraduate students in projects including modeling, analysis, and instrumentation development.
+\end{itemize}
+
+\divider
+
+\cvevent{Research Associate}{Wind Energy and Turbulence Lab, Portland State University}{2014 -- 2017}{Portland, OR}
+Led a team of researchers working in an academic fluid mechanics research laboratory to investigate emerging science and engineering problems relating to aerodynamics and wind turbine arrays. 
+\begin{itemize}
+\item Investigate high-Reynolds number fluid flows, including design of experiments, optical measurement systems, calibration and automation
+\item Lead fluid dynamics method development efforts for coupled dynamical systems, reduced-order modeling, and flow control
+\item Computational fluid dynamics studies to complement experimentation including analytical models, RANS and LES modeling
+\item Mentored students and researchers including training on lab procedure, experimentation, analysis and technical writing
+\end{itemize}
+
+\divider
+
+\cvevent{Research/Teaching Assistant}{Mechanical Engineering Department, Portland State University}{2009 -- 2014}{Portland, OR}
+Supported teaching and research activities in the student thermal/fluids laboratory. Appointment concurrent with advanced studies.
+\begin{itemize}
+\item Graduate instructor in the mechanical engineering curriculum with regular interaction with a large and diverse student body
+\item Managed the student fluid mechanics laboratory, designed laboratory exercises, student performance reporting and feedback
+\item Represented Maseeh College of Engineering and Computer Science in institution-wide transdisciplinary to advance sustainability objectives for the university
+\end{itemize}
+
+\divider
+
+\newpage
+\cvevent{Chef/Owner}{Chance of Rain Caf\'e}{2003 -- 2009}{Portland, OR}
+A neighborhood caf\'e serving exceptional espresso, local beer and wine, as well as breakfast and lunch fare.
+% \begin{itemize}
+%   \item Graduate instructor in the mechanical engineering curriculum with regular interaction with a large and diverse student body
+%   \item Managed the student fluid mechanics laboratory, designed laboratory exercises, student performance reporting and feedback
+%   \item Represented Maseeh College of Engineering and Computer Science in institution-wide transdisciplinary to advance sustainability objectives for the university
+% \end{itemize}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \clearpage
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \addsidebar[-6cm]
+% \cvsection{Education}
+\cvsection[sidebar-refs]{Education}
+
+\cvevent{{\href{http://www.pdx.edu/mme/doctorate-phd-mechanical-engineering}{Doctor of Philosophy, Mechanical Engineering}}}{\href{http://www.pdx.edu}{Portland State University}}{2013 -- 2016}{Portland, OR}
+\textsc{Dissertation:} \emph{Wake character in the wind turbine array: (Dis-)organization, spatial and dynamic evolution, and low-dimensional modeling}\\
+\textsc{Description:} Novel development of the proper orthogonal decomposition along spatial coordinate yields spatial evolution of wake modes and leads to reduced order modeling of dynamical systems\\
+\textsc{Advisors:} Dr. Ra\'ul Bayo\'an Cal and Dr. Murat Tutkun
+
+\divider
+
+\cvevent{{\href{http://www.pdx.edu/mme/master-of-science-in-mechanical-engineering-msme}{Master of Science, Mechanical Engineering}}}{\href{http://www.pdx.edu}{Portland State University}}{2012 -- 2014}{Portland, OR}
+\textsc{Thesis:} \emph{Anisotropy of the Reynolds stress tensor in the wakes of wind turbines in Cartesian arrangements with counter-rotating rotors}\\
+\textsc{Advisors:} Dr. Ra\'ul Bayo\'an Cal and Dr. Murat Tutkun
+
+\divider
+
+\cvevent{{\href{http://imp-turbulence.ec-lille.fr/index.php}{Master of Science, Computational and Experimental Turbulence}}}{\href{http://www.ec-lille.fr/}{\'Ecole Centrale de Lille} \newline \href{http://ensip.univ-poitiers.fr/}{ENSIP/ENSMA}}{2010 -- 2012}{Lille and Poitiers, France}
+\textsc{Thesis:} \emph{Characterization of wake dynamics for aligned and staggered wind turbine arrays via low-dimensional modeling}\\
+\textsc{Advisors:} Dr. Ra\'ul Bayo\'an Cal and Dr. Murat Tutkun
+
+\divider
+
+\cvevent{\href{http://www.pdx.edu/mme/undergraduate-mme}{Bachelor of Science, Mechanical Engineering}}{\href{http://www.pdx.edu}{Portland State University}}{2004 -- 2010}{Portland, OR}
+\textit{Summa Cum Laude}
+
+\cvsection{Awards and Honors}
+
+\begin{itemize}
+    \item \href{https://thesource.nrel.gov/headlines/posts/2018-09/nrel-honors-outstanding-mentors-2018.html}{NREL's Outstanding Mentor Award, honors the top mentors nominated by postdoctoral researchers, graduate and undergraduate interns. (2018, 2022)}
+    \item President's Award at the National Renewable Energy Laboratory for outstanding contributions to mission-critical objectives (2022) 
+    \item \href{http://www.pdx.edu/esur-igert/}{Ecosystem Services for Urbanizing Regions (ESUR) Integrative Graduate Education and Research Traineeship (IGERT) Doctoral Fellowship, National Science Foundation and Portland State University (2013--2015)}
+    \item \href{https://www.pdx.edu/cecs/scholarships-fellowships}{Maseeh Fellowship, awarded to outstanding graduate students enrolled in Master's or Ph.D. programs in Maseeh College of Engineering and Computer Science (2015--2016}
+    \item Outstanding research assistant of the year, Portland State University, Department of Mechanical and Materials Engineering (2013, 2014)
+\end{itemize}
+
+
+
+\end{document}
